@@ -72,7 +72,7 @@ const Home = () => {
   }, [isFormComplete]);
 
   return (
-    <div className={styles.container} style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div className={styles.container} style={{ backgroundImage: `url(${image})` }}>
       <h1>Weather App</h1>
       <div className={styles.inputContainer}>
         <input
@@ -119,4 +119,3 @@ const Home = () => {
 }
 
 export default Home;
-

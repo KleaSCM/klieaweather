@@ -7,6 +7,9 @@
   padding: 20px;
   color: white; /* Ensuring text is visible over the background */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow to text for better readability */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .inputContainer {
@@ -14,13 +17,17 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px; /* Limit the max width for larger screens */
 }
 
 .input {
   margin: 5px;
   padding: 10px;
+  width: 100%; /* Make inputs take the full width */
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .button {
@@ -30,6 +37,9 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: 100%; /* Make button take the full width */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  text-align: center;
 }
 
 .button:hover {
@@ -41,4 +51,17 @@
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
   padding: 20px;
   border-radius: 8px;
+  width: 100%;
+  max-width: 500px; /* Limit the max width for larger screens */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+@media (max-width: 600px) {
+  .inputContainer {
+    width: 90%;
+  }
+
+  .weatherInfo {
+    width: 90%;
+  }
 }
