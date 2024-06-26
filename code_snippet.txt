@@ -38,7 +38,8 @@ const Home = () => {
         : null;
 
       const timezoneOffsetInSeconds = weather.timezone;
-      const localTime = new Date(new Date().getTime() + timezoneOffsetInSeconds * 1000).toUTCString().replace(/ GMT$/, '');
+      const localTime = new Date(new Date().getTime() + 
+  timezoneOffsetInSeconds * 1000).toUTCString().replace(/ GMT$/, '');
 
       setWeatherData({
         city: city,
